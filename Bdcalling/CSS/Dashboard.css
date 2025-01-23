@@ -1,0 +1,161 @@
+* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 250px;
+
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  border-right: 1px solid var(--Color-Tokens-Border-Primary, #E4E4E4);
+  background: var(--Color-Tokens-Background-Secondary, #F9F9F9);
+
+
+  
+  
+}
+
+
+  .sidebar ul li a {
+    text-decoration: none;
+    color: #595959;
+}
+
+.sidebar ul li a:hover {
+    color: white;
+}
+
+.sidebar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.image1{
+    width: 185px;
+height: 40px;
+padding: 10px 0;
+}
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  padding: 15px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.sidebar ul li:hover,
+.sidebar ul li.active {
+    border-radius: 4px;
+    background: var(--Foundation-P1-Normal, #1A5EED);
+    color: white;
+}
+
+
+
+
+.sidebar ul {
+    list-style: none;
+    padding: 10;
+  }
+  
+  .sidebar ul li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .sidebar ul li i {
+    margin-right: 10px; /* Space between icon and text */
+    font-size: 18px; /* Size of the icon */
+  }
+
+
+
+
+/* Main Content Styles */
+.main-content {
+  margin-left: 250px;
+  padding: 20px;
+}
+
+.navbar {
+  height: 60px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar input {
+  width: 300px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+
+
+
+.navbar2 {
+    display: flex;
+    justify-content: space-between; /* Space between the two sections */
+    align-items: center; /* Vertically center the content */
+    padding: 10px 20px; /* Optional: adds padding to the navbar */
+    gap: 32px ;
+}
+
+.notification {
+    display: flex;
+    align-items: center;
+    
+}
+
+.notification img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px; /* Space between image and number */
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%; /* To make the image circular */
+    margin-right: 8px; /* Space between image and text */
+}
+
+h4 {
+    margin: 0; /* Remove default margin on h4 */
+}
+
+
+
+/* Content Section */
+.content {
+  margin-top: 20px;
+  border-bottom: 1px solid var(--Color-Tokens-Border-Primary, #E4E4E4);
+background: var(--Color-Tokens-Background-Primary, #FFF);
+}

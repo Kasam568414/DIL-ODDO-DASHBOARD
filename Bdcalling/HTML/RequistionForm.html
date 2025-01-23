@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="/Bdcalling/CSS/RequistionForm.css">
+   <!-- Add Font Awesome CDN for icons -->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>  
+  <div class="sidebar">
+    <img class="image1" src="/Bdcalling/Images/navigation-image-2.png" alt="Italian Trulli">
+    <ul>
+      <li id="dashboard" class="sidebar-item" onclick="setActive(this)" style="padding: 10px;">
+        <i class="fas fa-tachometer-alt"></i><a href="Dashboard.html">Dashboard</a>
+      </li>
+      <li id="todo-list" class="sidebar-item" onclick="setActive(this)" style="padding: 10px;">
+        <i class="fas fa-list-alt"></i><a href="ToDoList2.html"> To-Do List</a>
+      </li>
+      <li id="sales" class="sidebar-item" onclick="setActive(this)" style="padding: 10px;">
+        <i class="fas fa-chart-line"></i><a href="Sales1.html"> Sales</a>
+      </li>
+      <li id="operation" class="sidebar-item" onclick="setActive(this)" style="padding: 10px;">
+        <i class="fas fa-cogs"></i><a href="Operation.html">Operation</a>
+      </li>
+      <li id="requisition" class="sidebar-item" onclick="setActive(this)" style="padding: 10px;">
+        <i class="fas fa-clipboard-list"></i><a href="Requistion.html">Requisition</a>
+      </li>
+      <hr>
+      <li id="logout" class="sidebar-item" onclick="setActive(this)" style="padding: 10px;">
+        <i class="fas fa-sign-out-alt"></i> Logout
+      </li>
+    </ul>
+  </div>
+  <script src="/Bdcalling/js/index.js"></script> <!-- Link to external JS file -->        
+
+  <div class="main-content">
+    <div class="navbar">
+      <input type="text" placeholder="Search">
+
+      <div class="navbar2">
+        <div >
+            <div class="notification" >
+                <img   class="notification-image" src="/Bdcalling/Images/notification.png" alt="Notification">
+                <h4>12</h4>
+            </div>
+        </div>
+        <div class="user-info">
+            <img src="https://via.placeholder.com/35" alt="User Profile">
+            <span>Brian F.</span>
+        </div>
+    </div>
+    
+    </div>
+    <div class="content"> 
+   <div class="sub-content">
+
+    <div class="all-arrow">                                           
+        <img src="/Bdcalling/Images/header-icon-arrow-left.png" alt="">
+
+      <h1>Requistion Form</h1>
+    </div>
+    <div>
+          
+        <button class="button">
+          <img src="/Bdcalling/Images/header-icon-plus.png" alt="icon" class="icon" width="16" height="16">
+          View list
+      </button>
+   </div>
+
+    </div>
+</div>
+
+
+    <div class="order-details">
+        <h1>Fill This Form</h1>
+        <form>
+     
+          <div class="row">
+            <div class="field">
+              <label>Employee ID</label>
+              <input type="number" placeholder="1122">
+            </div>
+            <div class="field">
+              <label>Employee Name</label>
+
+              <div class="input-wrapper">
+                <input type="tel" id="phone-input" placeholder="Md Saifullah Mamun" required>
+                <img src="/Bdcalling/Images/vuesax-outline-frame.png" alt="Phone Icon" class="phone-icon">
+            </div>
+            </div>
+          </div>
+    
+          <div class="row">
+            <div class="field">
+              <label>Employee Phone No</label>
+             <div class="input-wrapper">
+                <input type="tel" id="phone-input" placeholder="Enter your phone number" required>
+                <img src="/Bdcalling/Images/vuesax-outline-call.png" alt="Phone Icon" class="phone-icon">
+            </div>
+
+             
+            </div>
+            <div class="field">
+              <label>Job ID</label>
+              <input type="" placeholder="Data Insight LLC">
+            </div>
+          </div>
+    
+          <div class="row">
+            <div class="field">
+              <label>Company name</label>
+              <input type="" placeholder="Data Insight LLC">
+            </div>
+            <div class="field">
+                <label>Team Name</label>
+                <div class="input-wrapper">
+                   <input type="tel" id="phone-input" placeholder="Select Team Name" required>
+                   <img src="/Bdcalling/Images/vuesax-outline-arrow-bottom.png" alt="Phone Icon" class="phone-icon">
+               </div>
+            </div>
+          </div>
+    
+          <div class="row">
+            <div class="field">
+                <label>Item Category</label>
+                <div class="input-wrapper">
+                   <input type="tel" id="phone-input" placeholder="Select Item Category" required>
+                   <img src="/Bdcalling/Images/vuesax-outline-arrow-bottom.png" alt="Phone Icon" class="phone-icon">
+               </div>
+            </div> 
+            <div class="field">
+                <label>Priority</label>
+                <div class="input-wrapper">
+                   <input type="tel" id="phone-input" placeholder="Select Priority" required>
+                   <img src="/Bdcalling/Images/vuesax-outline-arrow-bottom.png" alt="Phone Icon" class="phone-icon">
+               </div>
+             
+            </div>
+          </div>
+        </form>
+        
+      </div>
+
+
+
+
+
+    <div class="form-container">
+        <div class="form-header">Product</div>
+        <div class="product-row">
+           <div class="field">
+            <label>Product</label>
+            <div class="input-wrapper">
+                <input type="text" placeholder="Search Product">
+                <img src="/Bdcalling/Images/vuesax-outline-search-normal.png" alt="Phone Icon" class="phone-icon">
+            </div>
+           </div>
+           <div class="field">
+            <label>Description</label>
+            <input type="text" placeholder="Description">
+           </div>
+           <div class="field">
+            <label>Qty</label>
+            <input type="number" value="1" min="1">
+           </div>
+           <div class="field">
+            <label>Purpose of Use</label>
+            <input type="text" placeholder="Purpose of Use">
+           </div>
+          
+        
+           
+               
+            <button   class="attach-button"><img src="/Bdcalling/Images/iconly-light-upload.png" alt="">Attach files</button>
+               
+            <button class="remove-button"><img src="/Bdcalling/Images/iconly-light-delete.png" alt="">Remove</button>
+         
+      
+         
+        </div>
+        <!-- Repeat product-row as needed -->
+        <button class="add-button">+ Add Product</button>
+        <button class="submit-button">Submit</button>
+    </div>
+    
+      
+
+
+      
+
+
+
+
+
+ <!-- table here  -->
+
+  
+<!-- button here  -->
+
+
+
+
+ 
+</body>
+</html>
+

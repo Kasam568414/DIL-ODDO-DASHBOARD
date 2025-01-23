@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="/Bdcalling/CSS/Sales3Copy3.css">
+   <!-- Add Font Awesome CDN for icons -->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="sidebar">
+    <img class="image1" src="/Bdcalling/Images/navigation-image-2.png" alt="Italian Trulli">
+    <ul>
+      <li id="dashboard" class="sidebar-item" onclick="setActive(this)" style="padding: 10px;">
+        <i class="fas fa-tachometer-alt"></i><a href="Dashboard.html">Dashboard</a>
+      </li>
+      <li id="todo-list" class="sidebar-item" onclick="setActive(this)" style="padding: 10px;">
+        <i class="fas fa-list-alt"></i><a href="ToDoList2.html"> To-Do List</a>
+      </li>
+      <li id="sales" class="sidebar-item" onclick="setActive(this)" style="padding: 10px;">
+        <i class="fas fa-chart-line"></i><a href="Sales1.html"> Sales</a>
+      </li>
+      <li id="operation" class="sidebar-item" onclick="setActive(this)" style="padding: 10px;">
+        <i class="fas fa-cogs"></i><a href="Operation.html">Operation</a>
+      </li>
+      <li id="requisition" class="sidebar-item" onclick="setActive(this)" style="padding: 10px;">
+        <i class="fas fa-clipboard-list"></i><a href="Requistion.html">Requisition</a>
+      </li>
+      <hr>
+      <li id="logout" class="sidebar-item" onclick="setActive(this)" style="padding: 10px;">
+        <i class="fas fa-sign-out-alt"></i> Logout
+      </li>
+    </ul>
+  </div>
+  <script src="/Bdcalling/js/index.js"></script> <!-- Link to external JS file -->
+
+  <div class="main-content">
+    <div class="navbar">
+      <input type="text" placeholder="Search">
+
+      <div class="navbar2">
+        <div >
+            <div class="notification" >
+                <img   class="notification-image" src="/Bdcalling/Images/notification.png" alt="Notification">
+                <h4>12</h4>
+            </div>
+        </div>
+        <div class="user-info">
+            <img src="https://via.placeholder.com/35" alt="User Profile">
+            <span>Brian F.</span>
+        </div>
+    </div>
+    
+    </div>
+    <div class="content"> 
+      <div class="sub-content">
+       <div class="all-arrow">
+           <img src="/Bdcalling/Images/header-icon-arrow-left.png" alt="">
+   
+         <h1>All Order Information</h1>
+       </div>
+   
+       <div class="search-container">
+           <input type="text" class="search-input" placeholder="Search...">
+           <button class="search-button">
+          <img src="/Bdcalling/Images/header-icon-magnifying-glass.png" alt="">
+           </button>
+         </div>
+   
+   
+      </div>
+       </div>
+<!-- dselective month button here  -->
+
+
+ <!-- table here  -->
+ <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          
+            <th>
+
+                <div class="table-image">
+                    Fiverr Charge
+                    <img src="/Bdcalling/Images/icon-caret-double-vertical.png" alt="icon">
+                  </div>
+            </th>
+           
+          
+          <th>   
+            <div class="table-image">
+                Delivery Amount
+            <img src="/Bdcalling/Images/icon-caret-double-vertical.png" alt="icon">
+          </div>
+        </th>
+          <th>   
+            <div class="table-image">
+                Platform Source
+            <img src="/Bdcalling/Images/icon-caret-double-vertical.png" alt="icon">
+          </div>
+        </th>
+          <th>   
+            <div class="table-image">
+                Order Source
+            <img src="/Bdcalling/Images/icon-caret-double-vertical.png" alt="icon">
+          </div>
+        </th>
+          <th>   
+            <div class="table-image">
+                Remarks
+            <img src="/Bdcalling/Images/icon-caret-double-vertical.png" alt="icon">
+          </div>
+        </th>
+       
+      </thead>
+      <tbody>
+        <tr>
+          <td class="pink-color">22.00</td>
+          <td class="pink-color">88.00</td>
+          <td class="pink-color">
+            Fiverr
+           
+          </td>
+          <td class="pink-color">Query</td>
+          <td class="pink-color">
+            00
+   
+          </td>
+        
+        </tr>
+        <tr>
+          <td class="pink-color">22.00</td>
+          <td class="pink-color">88.00</td>
+          <td class="pink-color">
+            Fiverr
+           
+          </td>
+          <td class="pink-color">Query</td>
+          <td class="pink-color">
+            00
+   
+          </td>
+        
+        </tr>
+        <tr>
+          <td class="pink-color">22.00</td>
+          <td class="pink-color">88.00</td>
+          <td class="pink-color">
+            Fiverr
+           
+          </td>
+          <td class="pink-color">Query</td>
+          <td class="pink-color">
+            00
+   
+          </td>
+        
+        </tr>
+        <tr>
+          <td class="pink-color">22.00</td>
+          <td class="pink-color">88.00</td>
+          <td class="pink-color">
+            Fiverr
+           
+          </td>
+          <td class="pink-color">Query</td>
+          <td class="pink-color">
+            00
+   
+          </td>
+        
+        </tr>
+        <tr>
+          <td class="pink-color">22.00</td>
+          <td class="pink-color">88.00</td>
+          <td class="pink-color">
+            Fiverr
+           
+          </td>
+          <td class="pink-color">Query</td>
+          <td class="pink-color">
+            00
+   
+          </td>
+        
+        </tr>
+        <tr>
+          <td class="pink-color">22.00</td>
+          <td class="pink-color">88.00</td>
+          <td class="pink-color">
+            Fiverr
+           
+          </td>
+          <td class="pink-color">Query</td>
+          <td class="pink-color">
+            00
+   
+          </td>
+        
+        </tr>
+        <tr>
+          <td class="pink-color">22.00</td>
+          <td class="pink-color">88.00</td>
+          <td class="pink-color">
+            Fiverr
+           
+          </td>
+          <td class="pink-color">Query</td>
+          <td class="pink-color">
+            00
+   
+          </td>
+        
+        </tr>
+        <tr>
+          <td class="pink-color">22.00</td>
+          <td class="pink-color">88.00</td>
+          <td class="pink-color">
+            Fiverr
+           
+          </td>
+          <td class="pink-color">Query</td>
+          <td class="pink-color">
+            00
+   
+          </td>
+        
+        </tr>
+        <tr>
+          <td class="pink-color">22.00</td>
+          <td class="pink-color">88.00</td>
+          <td class="pink-color">
+            Fiverr
+           
+          </td>
+          <td class="pink-color">Query</td>
+          <td class="pink-color">
+            00
+   
+          </td>
+        
+        </tr>
+       
+        
+       
+      </tbody>
+    </table>
+
+  
+  </div>
+  
+<!-- button here  -->
+
+<div class="pagination">
+    <button class="arrow">&lt;</button>
+    <button class="next">Next</button>
+    <button class="arrow">&gt;</button>
+  </div>
+
+
+  </div>
+</body>
+</html>
+

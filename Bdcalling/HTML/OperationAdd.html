@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="/Bdcalling/CSS/OperationAdd.css">
+   <!-- Add Font Awesome CDN for icons -->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="sidebar">
+    <img class="image1" src="/Bdcalling/Images/navigation-image-2.png" alt="Italian Trulli">
+    <ul>
+      <li id="dashboard" class="sidebar-item" onclick="setActive(this)" style="padding: 10px;">
+        <i class="fas fa-tachometer-alt"></i><a href="Dashboard.html">Dashboard</a>
+      </li>
+      <li id="todo-list" class="sidebar-item" onclick="setActive(this)" style="padding: 10px;">
+        <i class="fas fa-list-alt"></i><a href="ToDoList2.html"> To-Do List</a>
+      </li>
+      <li id="sales" class="sidebar-item" onclick="setActive(this)" style="padding: 10px;">
+        <i class="fas fa-chart-line"></i><a href="Sales1.html"> Sales</a>
+      </li>
+      <li id="operation" class="sidebar-item" onclick="setActive(this)" style="padding: 10px;">
+        <i class="fas fa-cogs"></i><a href="Operation.html">Operation</a>
+      </li>
+      <li id="requisition" class="sidebar-item" onclick="setActive(this)" style="padding: 10px;">
+        <i class="fas fa-clipboard-list"></i><a href="Requistion.html">Requisition</a>
+      </li>
+      <hr>
+      <li id="logout" class="sidebar-item" onclick="setActive(this)" style="padding: 10px;">
+        <i class="fas fa-sign-out-alt"></i> Logout
+      </li>
+    </ul>
+  </div>
+  <script src="/Bdcalling/js/index.js"></script> <!-- Link to external JS file -->
+
+  <div class="main-content">
+    <div class="navbar">
+      <input type="text" placeholder="Search">
+
+      <div class="navbar2">
+        <div >
+            <div class="notification" >
+                <img   class="notification-image" src="/Bdcalling/Images/notification.png" alt="Notification">
+                <h4>12</h4>
+            </div>
+        </div>
+        <div class="user-info">
+            <img src="https://via.placeholder.com/35" alt="User Profile">
+            <span>Brian F.</span>
+        </div>
+    </div>
+    
+    </div>
+    <div class="content"> 
+      <div class="btn-disply-flex">
+        <div class="all-arrow">
+          <img src="/Bdcalling/Images/header-icon-arrow-left.png" alt="">
+  
+        <h1>Add</h1>
+      </div>
+
+      <div>
+          
+        <button class="button">
+          <img src="/Bdcalling/Images/listicon.png" alt="icon" class="icon" width="16" height="16">
+          View list
+      </button>
+  </div>
+      </div>
+
+
+    <!-- table here  -->
+
+    <div class="employee-details">
+       <div class="">
+        <h2>Employee Details</h2>
+       
+       </div>
+        <form>
+          <div class="form-group">
+            <label for="employee-id">Employee ID</label>
+            <input type="text" id="employee-id" placeholder="1122" />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="employee-name">Employee Name</label>
+              <input type="text" id="employee-name" placeholder="Md Saifullah Mamon" />
+            </div>
+            <div class="form-group">
+              <label for="company-name">Company Name</label>
+              <input type="text" id="company-name" placeholder="Data Insight LLC" />
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- another table here  -->
+
+
+      <div class="order-details">
+        <h1>Details</h1>
+        <form>
+     
+          <div class="row">
+            <div class="field">
+              <label>Date</label>
+              <input type="date" placeholder="12-24-25">
+            </div>
+            <div class="field">
+              <label>Order Status</label>
+              <input type="url" placeholder="">
+            </div>
+          </div>
+    
+          <div class="row">
+            <div class="field">
+              <label>Order ID</label>
+              <input type="url" placeholder="">                            
+             
+            </div>
+            <div class="field">
+              <label>Team Name</label>
+              <input type="" placeholder="Please choose an options">
+            </div>
+          </div>
+    
+          <div class="row">
+            <div class="field">
+              <label>Project</label>
+              <input type="" placeholder="App_Cake ">
+            </div>
+            <div class="field">
+              <label> Instructions Sheet List </label>
+              <input type="text" placeholder="">
+            </div>
+          </div>
+    
+          <div class="row">
+            <div class="field">
+              <label>Team Name</label>
+              <input type="" placeholder="Please choose an options">
+            </div> 
+            <div class="field">
+              <label>Delivery Amount</label>
+              <input type="number" placeholder="500   ">
+             
+            </div>
+          </div>
+           <div  class="row">
+            <div class="field">
+              <label>Percentage</label>
+              <input type="number" placeholder=" "> 
+             
+            </div>
+            <div class="field">
+              <label>Monetary value</label>
+              <input type="number" placeholder=" "> 
+             
+            </div>
+           </div>
+        
+    
+          <div class="field">
+            <label>Special Remarks</label>
+            <textarea placeholder="Tell us about your use case..."></textarea>
+          </div>
+        </form>
+      </div>
+
+
+  <!-- button here  -->
+
+
+
+  <div>
+    <button class="btn-sub">Submit</button>
+  </div>
+  
+ 
+
+
+
+    
+  </div>
+  <div>
+    <h2 class="detail">Details</h2>
+  </div>
+</body>
+</html>
+

@@ -1,0 +1,691 @@
+* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 250px;
+
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  border-right: 1px solid var(--Color-Tokens-Border-Primary, #E4E4E4);
+  background: var(--Color-Tokens-Background-Secondary, #F9F9F9);
+
+
+  
+  
+}
+
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #595959;
+}
+
+.sidebar ul li a:hover {
+  color: white;
+}
+
+.sidebar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.image1{
+    width: 185px;
+height: 40px;
+padding: 10px 0;
+}
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  padding: 15px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.sidebar ul li:hover,
+.sidebar ul li.active {
+    border-radius: 4px;
+    background: var(--Foundation-P1-Normal, #1A5EED);
+    color: white;
+}
+
+
+
+
+.sidebar ul {
+    list-style: none;
+    padding: 10;
+  }
+  
+  .sidebar ul li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .sidebar ul li i {
+    margin-right: 10px; /* Space between icon and text */
+    font-size: 18px; /* Size of the icon */
+  }
+
+
+
+
+/* Main Content Styles */
+.main-content {
+  margin-left: 250px;
+  padding: 20px;
+}
+
+.navbar {
+  height: 60px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar input {
+  width: 300px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+
+
+
+.navbar2 {
+    display: flex;
+    justify-content: space-between; /* Space between the two sections */
+    align-items: center; /* Vertically center the content */
+    padding: 10px 20px; /* Optional: adds padding to the navbar */
+    gap: 32px ;
+}
+
+.notification {
+    display: flex;
+    align-items: center;
+    
+}
+
+.notification img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px; /* Space between image and number */
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%; /* To make the image circular */
+    margin-right: 8px; /* Space between image and text */
+}
+
+h4 {
+    margin: 0; /* Remove default margin on h4 */
+}
+
+
+
+
+ .content {
+  margin-top: 20px;
+  border-bottom: 1px solid var(--Color-Tokens-Border-Primary, #E4E4E4);
+background: var(--Color-Tokens-Background-Primary, #FFF);
+
+}
+
+
+
+
+
+.pipeline-container {
+    padding: 20px;
+      width: 100%;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .create-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .create-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .columns {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+  }
+  
+  .column {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 250px;
+  }
+  
+  .column h2 {
+    font-size: 18px;
+    margin: 0 0 10px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+  }
+  
+  .task-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .task-card p {
+    margin: 5px 0;
+  }
+  
+  .avatars {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .avatar {
+    width: 30px;
+    height: 30px;
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+
+
+
+  .header1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+
+
+  }
+  .header1 h1{
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; 
+  }
+
+
+  .create-button{
+    display: flex;
+    padding: 8px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    background: var(--P2, #1B5FEE);
+    margin-top: 20px;
+                                                 
+  }
+
+/* Right container (flex alignment) */
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Aligns everything to the right */
+    gap: 15px; /* Adds some space between elements if needed */
+}
+
+
+
+/* search buuton cess here start  */
+.sub-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+.search-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.search-input::placeholder {
+  color: #aaa;
+}
+
+.search-button {
+  background: none;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  outline: none;
+}
+.search-button img {
+  width: 20px;
+  height: 20px;
+}
+
+
+.search-button span {
+  font-size: 20px;
+  color: #888;
+}
+
+.search-button:hover span {
+  color: #555;
+}
+
+
+
+
+
+
+
+.all-arrow{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+
+}
+.all-arrow img{
+  width: 20px;
+  height: 20px;
+
+}
+
+.all-arrow h1{
+color: var(--Color-Tokens-Content-Dark-Primary, #000);
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 120%; 
+
+
+}
+
+
+
+
+
+
+
+.container2{
+    display: flex; 
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+
+.card{
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+}
+.card-plus img{
+width: 16px;
+height: 16px;
+
+}
+
+.card-plus{
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 10px;
+
+
+
+}
+
+
+.card .impotant1{
+color: var(--P2, #1B5FEE);
+font-family: Urbanist;
+font-size: 10px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.2px;
+}
+
+.card .impotant2{
+color: var(--P2, #FD217B);
+font-family: Urbanist;
+font-size: 10px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.2px;
+}
+.card .impotant3{
+color: var(--P2, #1B5FEE);
+font-family: Urbanist;
+font-size: 10px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.2px;
+}
+.card .impotant4{
+color: var(--P2, #FD217B);
+font-family: Urbanist;
+font-size: 10px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.2px;
+}
+.card .delete{
+color: #F00;
+font-family: Urbanist;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.2px;
+
+}
+
+
+
+.progress-bar {
+    display: flex;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.progress-bar .green {
+    background-color: #28a745;
+    flex: 1;
+}
+
+
+.card h3 {
+    font-size: 16px;
+    white-space: nowrap;
+   
+    text-overflow: ellipsis;
+    margin-bottom: 8px;
+    color: black;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 22.4px */
+    letter-spacing: 0.2px;
+  }
+
+
+
+
+  .progress-bar .orange {
+    background-color: #ffc107;
+    flex: 1;
+  }
+
+  .progress-bar .red {
+    background-color: #dc3545;
+    flex: 1;
+  }
+
+
+
+
+  .card-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+    }
+
+    .project-card {
+      width: 200px;
+      background: white;
+      border-left: 2px solid #007bff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      border-right: 2px solid #007bff;
+    }
+
+
+
+
+    .project-card2{
+
+        width: 200px;
+        background: white;
+        border-left: 2px solid #FD217B;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        border-right: 2px solid #FD217B;
+
+    }
+    .project-card3{
+
+        width: 200px;
+        background: white;
+        border-left: 2px solid #989898;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        border-right: 2px solid #989898;
+
+    }
+
+    .project-title {
+      font-size: 14px;
+      margin: 0 0 10px 0;
+      color: #333;
+    }
+
+    .project-info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 10px 0;
+    }
+
+    .project-info-2 {
+        display: flex;
+        align-items: center;
+        gap: 8px; /* Space between the icon and the text */
+      }
+      
+      .calendar-icon {
+        width: 18px; /* Adjust the size of the calendar icon */
+        height: 18px;
+      }
+      
+      .project-date-text {
+        font-size: 14px;
+        color: #555;
+        margin: 0; /* Remove default margin */
+        font-weight: normal;
+      }
+      
+    .project-date {
+      color: #555;
+      font-size: 12px;
+    }
+
+    .project-avatar img {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+    }
+
+    .progress-bar-wrapper {
+      display: flex;
+      width: 100%;
+      height: 8px;
+      border-radius: 5px;
+      overflow: hidden;
+      margin: 10px 0;
+    }
+
+  
+    .card-actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .rating {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 12px;
+      color: #555;
+    }
+
+    .deadline {
+      color: #ff4757;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 12px;
+    }
+
+    .icon {
+      font-size: 16px;
+      color: #007bff;
+    }
+
+
+
+
+
+
+
+
+
+    .icon-with-text {
+        display: flex;
+        align-items: center; /* Align image and text vertically */
+        gap: 8px; /* Add spacing between the image and text */
+        margin-top: 5px;
+      }
+      
+      .icon-with-text img {
+        width: 10px; /* Adjust the size of the icon */
+        height: 10px;
+        color: #FFAA2D;
+       
+
+      }
+      
+      .icon-label {
+        font-size: 14px;
+        color: #333;
+        margin: 0; /* Remove default margin */
+        
+      }
+
+
+
+
+
+
+      /* card grid css here  */
+
+      .main-card{
+
+        display: grid;
+        grid-template-rows: repeat(5, 1fr); /* 5 columns */
+        gap: 15px; /* Space between cards */
+        
+       
+      }
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
