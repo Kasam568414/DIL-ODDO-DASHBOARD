@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sales Section</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    .nav-item:hover {
+      background-color: #1A5EED;
+      border-radius: 4px; 
+    }
+    .nav-item:hover .nav-link,
+    .nav-item.active .nav-link {
+      color: white !important;
+    }
+  </style>
+</head>
+<body>
+  <div class="d-flex  ">
+    <!-- Sidebar -->
+    <div class="d-flex flex-column bg-light border-right" style="min-height: 100vh; width: 250px;">
+      <div class="text-center py-3">
+        <img src="/Bdcalling/Images/navigation-image-2.png" alt="Logo" class="img-fluid" style="max-width: 185px;">
+      </div>
+      <ul class="nav flex-column pl-4">
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="Dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="ToDoList2.html"><i class="fas fa-list-alt"></i> To-Do List</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="Sales1.html"><i class="fas fa-chart-line"></i> Sales</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="Operation.html"><i class="fas fa-cogs"></i> Operation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="Requistion.html"><i class="fas fa-clipboard-list"></i> Requisition</a>
+        </li>
+        <hr>
+        <li class="nav-item">
+          <a class="nav-link  text-dark" href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="flex-grow-1 ">
+      <nav class="navbar navbar-light bg-white border-bottom">
+        <div class="container-fluid d-flex align-items-center">
+            <div class="position-relative w-50">
+              <input 
+                type="text" 
+                class="form-control pl-5" 
+                placeholder="Search">
+              <i 
+                class="fas fa-search position-absolute" 
+                style="top: 55%; left: 20px; transform: translateY(-50%); color: #aaa;"></i>
+            </div>
+            <div class="d-flex align-items-center ml-auto">
+              <div class="d-flex align-items-center mr-3">
+                <img src="/Bdcalling/Images/notification.png" alt="Notification" class="img-fluid" style="max-width: 30px;">
+                <span class="ml-2 badge badge-primary">12</span>
+              </div>
+              <div class="d-flex align-items-center">
+                <img src="https://via.placeholder.com/35" alt="User Profile" class="rounded-circle">
+                <span class="ml-2">Brian F.</span>
+              </div>
+            </div>
+          </div>
+          
+          
+      </nav>
+
+  <div class=" p-2 px-3">
+    <div class="mt-4 bg-white border-bottom">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+          <div class="d-flex align-items-center gap-3 px-1  ">
+              <img src="/Bdcalling/Images/header-icon-arrow-left.png" alt="" class="img-fluid" style="width: 20px; height: 20px;">
+              <h1 class="h4 text-dark ml-2">Add</h1>
+          </div>
+          <div>
+            <button class="btn btn-primary d-flex align-items-center  gap-2 mr-3">
+                <img src="/Bdcalling/Images/listicon.png" alt="" class="img-fluid" style="width: 16px; height: 16px;">
+                <span class="text-white small">View list</span>
+            </button>
+            
+        </div>
+        
+      </div>
+  </div>
+  <div class="p-4 rounded shadow-sm mt-4" style="background: #FAFAFA;">
+    <div class="form-header mb-4">
+        <h3>Fill This Form</h3>
+    </div>
+    <form>
+      <div class="form-row mb-3">
+        <div class="form-group col-md-6">
+          <label>Employee ID</label>
+          <input type="number" class="form-control" placeholder="1122">
+        </div>
+        <div class="form-group col-md-6">
+          <label>Employee Name</label>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Md Saifullah Mamun" required>
+            <div class="input-group-append">
+              <span class="input-group-text">
+                <img src="/Bdcalling/Images/vuesax-outline-frame.png" alt="Phone Icon" class="phone-icon">
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="form-row mb-3">
+        <div class="form-group col-md-6">
+          <label>Employee Phone No</label>
+          <div class="input-group">
+            <input type="tel" class="form-control" placeholder="Enter your phone number" required>
+            <div class="input-group-append">
+              <span class="input-group-text">
+                <img src="/Bdcalling/Images/vuesax-outline-call.png" alt="Phone Icon" class="phone-icon">
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="form-group col-md-6">
+          <label>Job ID</label>
+          <input type="text" class="form-control" placeholder="Data Insight LLC">
+        </div>
+      </div>
+  
+      <div class="form-row mb-3">
+        <div class="form-group col-md-6">
+          <label>Company Name</label>
+          <input type="text" class="form-control" placeholder="Data Insight LLC">
+        </div>
+        <div class="form-group col-md-6">
+          <label>Team Name</label>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Select Team Name" required>
+            <div class="input-group-append">
+              <span class="input-group-text">
+                <img src="/Bdcalling/Images/vuesax-outline-arrow-bottom.png" alt="Phone Icon" class="phone-icon">
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="form-row mb-3">
+        <div class="form-group col-md-6">
+          <label>Item Category</label>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Select Item Category" required>
+            <div class="input-group-append">
+              <span class="input-group-text">
+                <img src="/Bdcalling/Images/vuesax-outline-arrow-bottom.png" alt="Phone Icon" class="phone-icon">
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="form-group col-md-6">
+          <label>Priority</label>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Select Priority" required>
+            <div class="input-group-append">
+              <span class="input-group-text">
+                <img src="/Bdcalling/Images/vuesax-outline-arrow-bottom.png" alt="Phone Icon" class="phone-icon">
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+   
+  
+    <!-- Repeat product-row as needed -->
+  
+
+    <div class="p-4 rounded shadow-sm mt-4" style="background: #FAFAFA;">
+        <div class="form-header mb-4">
+            <h3>Fill This Form</h3>
+        </div> 
+        <div class="row mb-3 align-items-end">
+            <div class="col-md-3">
+                <label for="product" class="form-label">Product</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="product" placeholder="Search Product">
+                    <span class="input-group-text"><img src="/Bdcalling/Images/vuesax-outline-search-normal.png" alt="Search Icon" class="phone-icon"></span>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <label for="description" class="form-label">Description</label>
+                <input type="text" class="form-control" id="description" placeholder="Description">
+            </div>
+            <div class="col-md-2">
+                <label for="quantity" class="form-label">Qty</label>
+                <input type="number" class="form-control" id="quantity" placeholder="1">
+            </div>
+            <div class="col-md-2">
+                <label for="purpose" class="form-label">Purpose of Use</label>
+                <input type="text" class="form-control" id="purpose" placeholder="Purpose of Use">
+            </div>
+            <div class="col-md-3">
+                <div class="d-flex gap-3">
+                    <!-- Attach Files Button with Image -->
+                    <button type="button" class="btn btn-outline-primary w-100 d-flex align-items-center justify-content-center" style="height: 38px;">
+                        <img src="/Bdcalling/Images/iconly-light-upload.png" alt="Upload Icon" class="me-2" style="filter: grayscale(100%);"> Attach files
+                    </button>
+                    <!-- Remove Button with Image -->
+                    <button type="button" class="btn btn-outline-danger w-100 d-flex align-items-center justify-content-center" style="height: 38px;">
+                        <img src="/Bdcalling/Images/iconly-light-delete.png" alt="Delete Icon" class="me-2" style="filter: grayscale(100%);"> Remove
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+  </div>
+
+
+
+
+ 
+
+
+  
+
+
+
+
+
+  
+
+
+  
+   
+  
+
+
+
+
+
+
+
+  </div>
+    
+    </div>
+    
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard</title>
+  <title>Sales Section</title>
 
   <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
@@ -11,7 +11,7 @@
   <style>
     .nav-item:hover {
       background-color: #1A5EED;
-      border-radius: 4px;
+      border-radius: 4px; 
     }
     .nav-item:hover .nav-link,
     .nav-item.active .nav-link {
@@ -20,7 +20,7 @@
   </style>
 </head>
 <body>
-  <div class="d-flex">
+  <div class="d-flex  ">
     <!-- Sidebar -->
     <div class="d-flex flex-column bg-light border-right" style="min-height: 100vh; width: 250px;">
       <div class="text-center py-3">
@@ -39,7 +39,7 @@
         <li class="nav-item">
           <a class="nav-link text-dark" href="Operation.html"><i class="fas fa-cogs"></i> Operation</a>
         </li>
-        <li class="nav-item ">
+        <li class="nav-item">
           <a class="nav-link text-dark" href="Requistion.html"><i class="fas fa-clipboard-list"></i> Requisition</a>
         </li>
         <hr>
@@ -49,36 +49,62 @@
       </ul>
     </div>
 
-    <!-- Main Content -->0.
-    <div class="flex-grow-1">
-      <nav class="navbar navbar-light bg-white border-bottom">
+    <!-- Main Content -->
+    <div class="flex-grow-1  ">
+      <nav class="navbar navbar-light bg-white border-bottom"> 
         <div class="container-fluid d-flex align-items-center">
-          <div class="position-relative w-50">
-            <input 
-              type="text" 
-              class="form-control pl-5" 
-              placeholder="Search">
-            <i 
-              class="fas fa-search position-absolute" 
-              style="top: 55%; left: 20px; transform: translateY(-50%); color: #aaa;"></i>
-          </div>
-          <div class="d-flex align-items-center ml-auto">
-            <div class="d-flex align-items-center mr-3">
-              <img src="/Bdcalling/Images/notification.png" alt="Notification" class="img-fluid" style="max-width: 30px;">
-              <span class="ml-2 badge badge-primary">12</span>
+            <div class="position-relative w-50">
+              <input 
+                type="text" 
+                class="form-control pl-5" 
+                placeholder="Search">
+              <i 
+                class="fas fa-search position-absolute" 
+                style="top: 55%; left: 20px; transform: translateY(-50%); color: #aaa;"></i>
             </div>
-            <div class="d-flex align-items-center">
-              <img src="https://via.placeholder.com/35" alt="User Profile" class="rounded-circle">
-              <span class="ml-2">Brian F.</span>
-            </div>
+            <div class="d-flex align-items-center ml-auto">
+              <div class="d-flex align-items-center mr-3">
+                <img src="/Bdcalling/Images/notification.png" alt="Notification" class="img-fluid" style="max-width: 30px;">
+                <span class="ml-2 badge badge-primary">12</span>
+              </div>
+               <div class="d-flex align-items-center">
+                <img src="https://via.placeholder.com/35" alt="User Profile" class="rounded-circle">
+                <span class="ml-2">Brian F.</span>
+              </div>
+            </div> 
           </div>
-        </div>
+           
+          
       </nav>
 
-      <div class=" px-4 bg-white border">
-        <h1>Dashboard</h1>
+  <div class=" p-2 px-3">
+    <div class="mt-4 bg-white border-bottom">
+      <div>
+          <div class="d-flex align-items-center gap-3 px-3">
+              <img src="/Bdcalling/Images/header-icon-arrow-left.png" alt="" class="img-fluid" style="width: 20px; height: 20px;">
+              <h1 class="h2 text-dark ml-2">Create Order</h1>
+          </div>
+         
+       
+        
       </div>
+   
+  </div>
+ 
+<div class="mt-2 ">
+  <div style="background: #D1ECF1;" class="p-4 px-3 rounded">
+    <h5>New Order <span style="font-weight: bold;">S46329</span> Created</h5>
+    <h6 style="color: #0EB1FE;">Create New Order</h6>
+    <h6 style="color: #0EB1FE;">Dashboard</h6>
+    <h6 style="color: #0EB1FE;">View all sales</h6>
+    
+  </div>
+</div>    
+  
+  </div>
+    
     </div>
+    
   </div>
 
   <!-- Bootstrap JS -->
@@ -87,3 +113,4 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+                                                           
