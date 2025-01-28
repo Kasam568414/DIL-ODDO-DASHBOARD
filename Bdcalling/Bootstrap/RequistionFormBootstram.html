@@ -28,23 +28,23 @@
       </div>
       <ul class="nav flex-column pl-4">
         <li class="nav-item">
-          <a class="nav-link text-dark" href="Dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+          <a class="nav-link text-dark" href="/Bdcalling/Bootstrap/DashboardBootstrap.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="ToDoList2.html"><i class="fas fa-list-alt"></i> To-Do List</a>
+          <a class="nav-link text-dark" href="/Bdcalling/Bootstrap/ToDoList2Bootstrap.html"><i class="fas fa-list-alt"></i> To-Do List</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="Sales1.html"><i class="fas fa-chart-line"></i> Sales</a>
+          <a class="nav-link text-dark" href="/Bdcalling/Bootstrap/Sales1Bootstrap.html"><i class="fas fa-chart-line"></i> Sales</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="Operation.html"><i class="fas fa-cogs"></i> Operation</a>
+          <a class="nav-link text-dark" href="/Bdcalling/Bootstrap/OperationBootstrap.html"><i class="fas fa-cogs"></i> Operation</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link text-dark" href="Requistion.html"><i class="fas fa-clipboard-list"></i> Requisition</a>
+        <li class="nav-item ">
+          <a class="nav-link text-dark" href="/Bdcalling/Bootstrap/RequistionBootstrap.html"><i class="fas fa-clipboard-list"></i> Requisition</a>
         </li>
         <hr>
         <li class="nav-item">
-          <a class="nav-link  text-dark" href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+          <a class="nav-link text-dark" href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
         </li>
       </ul>
     </div>
@@ -85,16 +85,16 @@
               <h1 class="h4 text-dark ml-2">Add</h1>
           </div>
           <div>
-            <button class="btn btn-primary d-flex align-items-center  gap-2 mr-3">
-                <img src="/Bdcalling/Images/listicon.png" alt="" class="img-fluid" style="width: 16px; height: 16px;">
-                <span class="text-white small">View list</span>
+            <button class="btn btn-dark d-flex align-items-center  gap-2 mr-3">
+                <img src="/Bdcalling/Images/listicon.png" alt="" class="img-fluid mr-2" style="width: 16px; height: 16px;">
+                <span class="text-white small" style="height: 20px;">View list</span>
             </button>
             
         </div>
         
       </div>
   </div>
-  <div class="p-4 rounded shadow-sm mt-4" style="background: #FAFAFA;">
+  <div class="p-4 rounded shadow-sm mt-4" style="background: #FAFAFA;"> 
     <div class="form-header mb-4">
         <h3>Fill This Form</h3>
     </div>
@@ -200,7 +200,7 @@
                 <label for="description" class="form-label">Description</label>
                 <input type="text" class="form-control" id="description" placeholder="Description">
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2"> 
                 <label for="quantity" class="form-label">Qty</label>
                 <input type="number" class="form-control" id="quantity" placeholder="1">
             </div>
@@ -209,18 +209,124 @@
                 <input type="text" class="form-control" id="purpose" placeholder="Purpose of Use">
             </div>
             <div class="col-md-3">
-                <div class="d-flex gap-3">
-                    <!-- Attach Files Button with Image -->
-                    <button type="button" class="btn btn-outline-primary w-100 d-flex align-items-center justify-content-center" style="height: 38px;">
-                        <img src="/Bdcalling/Images/iconly-light-upload.png" alt="Upload Icon" class="me-2" style="filter: grayscale(100%);"> Attach files
-                    </button>
-                    <!-- Remove Button with Image -->
-                    <button type="button" class="btn btn-outline-danger w-100 d-flex align-items-center justify-content-center" style="height: 38px;">
-                        <img src="/Bdcalling/Images/iconly-light-delete.png" alt="Delete Icon" class="me-2" style="filter: grayscale(100%);"> Remove
-                    </button>
-                </div>
+              <div class="d-flex gap-3">
+                <!-- Attach Files Button -->
+                <button type="button" class="btn btn-primary  w-100 d-flex align-items-center  justify-content-center" style="height: 38px;">
+                    <img src="/Bdcalling/Images/iconly-light-upload.png" alt="Upload Icon" class="me-2  mr-2  img-icon" 
+                         style="filter: grayscale(100%); transition: filter 0.3s ease; height: 24px;">
+                    Attach files
+                </button>
+                <!-- Remove Button -->
+                <button type="button" class="btn btn-danger  w-100 d-flex align-items-center ml-2 justify-content-center ms-2" style="height: 38px;">
+                    <img src="/Bdcalling/Images/iconly-light-delete.png" alt="Delete Icon" class="me-2 mr-2 img-icon" 
+                         style="filter: grayscale(100%); transition: filter 0.3s ease; height: 24px;">
+                    Remove
+                </button>
+            </div>
+            
+            
+            <!-- Bootstrap's default hover effect -->
+            
+            
+            
             </div>
         </div>
+        <div class="row mb-3 align-items-end">
+            <div class="col-md-3">
+                <label for="product" class="form-label">Product</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="product" placeholder="Search Product">
+                    <span class="input-group-text"><img src="/Bdcalling/Images/vuesax-outline-search-normal.png" alt="Search Icon" class="phone-icon"></span>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <label for="description" class="form-label">Description</label>
+                <input type="text" class="form-control" id="description" placeholder="Description">
+            </div>
+            <div class="col-md-2"> 
+                <label for="quantity" class="form-label">Qty</label>
+                <input type="number" class="form-control" id="quantity" placeholder="1">
+            </div>
+            <div class="col-md-2">
+                <label for="purpose" class="form-label">Purpose of Use</label>
+                <input type="text" class="form-control" id="purpose" placeholder="Purpose of Use">
+            </div>
+            <div class="col-md-3">
+              <div class="d-flex gap-3">
+                <!-- Attach Files Button -->
+                <button type="button" class="btn btn-primary  w-100 d-flex align-items-center  justify-content-center" style="height: 38px;">
+                    <img src="/Bdcalling/Images/iconly-light-upload.png" alt="Upload Icon" class="me-2  mr-2  img-icon" 
+                         style="filter: grayscale(100%); transition: filter 0.3s ease; height: 24px;">
+                    Attach files
+                </button>
+                <!-- Remove Button -->
+                <button type="button" class="btn btn-danger  w-100 d-flex align-items-center ml-2 justify-content-center ms-2" style="height: 38px;">
+                    <img src="/Bdcalling/Images/iconly-light-delete.png" alt="Delete Icon" class="me-2 mr-2 img-icon" 
+                         style="filter: grayscale(100%); transition: filter 0.3s ease; height: 24px;">
+                    Remove
+                </button>
+            </div>
+            
+            
+            <!-- Bootstrap's default hover effect -->
+            
+            
+            
+            </div>
+        </div>
+        <div class="row mb-3 align-items-end">
+            <div class="col-md-3">
+                <label for="product" class="form-label">Product</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="product" placeholder="Search Product">
+                    <span class="input-group-text"><img src="/Bdcalling/Images/vuesax-outline-search-normal.png" alt="Search Icon" class="phone-icon"></span>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <label for="description" class="form-label">Description</label>
+                <input type="text" class="form-control" id="description" placeholder="Description">
+            </div>
+            <div class="col-md-2"> 
+                <label for="quantity" class="form-label">Qty</label>
+                <input type="number" class="form-control" id="quantity" placeholder="1">
+            </div>
+            <div class="col-md-2">
+                <label for="purpose" class="form-label">Purpose of Use</label>
+                <input type="text" class="form-control" id="purpose" placeholder="Purpose of Use">
+            </div>
+            <div class="col-md-3">
+              <div class="d-flex gap-3">
+                <!-- Attach Files Button -->
+                <button type="button" class="btn btn-primary  w-100 d-flex align-items-center  justify-content-center" style="height: 38px;">
+                    <img src="/Bdcalling/Images/iconly-light-upload.png" alt="Upload Icon" class="me-2  mr-2  img-icon" 
+                         style="filter: grayscale(100%); transition: filter 0.3s ease; height: 24px;">
+                    Attach files
+                </button>
+                <!-- Remove Button -->
+                <button type="button" class="btn btn-danger  w-100 d-flex align-items-center ml-2 justify-content-center ms-2" style="height: 38px;">
+                    <img src="/Bdcalling/Images/iconly-light-delete.png" alt="Delete Icon" class="me-2 mr-2 img-icon" 
+                         style="filter: grayscale(100%); transition: filter 0.3s ease; height: 24px;">
+                    Remove
+                </button>
+            </div>
+       
+
+            
+            
+            <!-- Bootstrap's default hover effect -->
+            
+            
+            
+            </div>
+      
+        </div>
+        <button class="btn btn-dark d-flex align-items-center">
+          <i class="fas fa-plus me-2"></i> Add Product
+        </button>
+        <button class="btn mt-3 btn-dark w-100 text-center    ">
+           Add Product
+        </button>
+
     </div>
     
     
