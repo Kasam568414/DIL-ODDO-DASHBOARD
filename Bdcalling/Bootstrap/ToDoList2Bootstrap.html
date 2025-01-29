@@ -18,13 +18,87 @@
       color: white !important;
     }
 
+    /* Mobile-specific styles */
+    @media (max-width: 768px) {
+      .sidebar {
+        position: fixed;
+        top: 0;
+        left: -250px;
+        height: 100vh;
+        transition: left 0.3s ease;
+        z-index: 1000;
+      }
+      .sidebar.active {
+        left: 0;
+      }
+      .navbar {
+        padding: 0.5rem 1rem;
+      }
+      .search-container {
+        width: 100%;
+        margin-left: 0;
+      }
+      .navbar .d-flex {
+        flex-direction: row;
+        align-items: center;
+      }
+      .navbar .d-flex .mr-3 {
+        margin-right: 1rem !important;
+      }
+      .navbar .d-flex .ml-auto {
+        margin-left: auto;
+      }
+    }
 
+ /* Improved Responsive Styles for Mobile */
+@media (max-width: 768px) {
+  .pipeline-container {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .p-3.mt-4.d-flex {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .p-3.mt-4.d-flex > div {
+    width: 48% !important;
+  }
+
+  .p-4.d-flex {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .p-4.d-flex .card {
+    width: 100% !important;
+   
+    margin: 10px 1%;
+  }
+
+  .d-flex.justify-content-between {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+
+
+
+
+    
   </style>
 </head>
 <body>
   <div class="d-flex">
     <!-- Sidebar -->
-    <div class="d-flex flex-column bg-light border-right" style="min-height: 100vh; width: 250px;">
+    <div class="sidebar d-flex flex-column bg-light border-right" style="min-height: 100vh; width: 250px;">
       <div class="text-center py-3">
         <img src="/Bdcalling/Images/navigation-image-2.png" alt="Logo" class="img-fluid" style="max-width: 185px;">
       </div>
@@ -44,7 +118,8 @@
         <li class="nav-item ">
           <a class="nav-link text-dark" href="/Bdcalling/Bootstrap/RequistionBootstrap.html"><i class="fas fa-clipboard-list"></i> Requisition</a>
         </li>
-        <hr>
+        <hr style="border: 1px solid #000; margin: 10px 0; width: 90%; background-color: #000;">
+
         <li class="nav-item">
           <a class="nav-link text-dark" href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
         </li>
@@ -55,7 +130,11 @@
     <div class="flex-grow-1">
       <nav class="navbar navbar-light bg-white border-bottom">
         <div class="container-fluid d-flex align-items-center">
-          <div class="position-relative w-50">
+          <!-- Hamburger Menu Icon -->
+          <button class="navbar-toggler d-block d-md-none" type="button" onclick="toggleSidebar()">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="position-relative search-container w-50">
             <input 
               type="text" 
               class="form-control pl-5" 
@@ -77,25 +156,28 @@
         </div>
       </nav>
 
-      <div class="p-4 bg-white border">
-        <div class="d-flex align-items-center justify-content-between">
-          <div>
-            <h1 class="h4 text-dark">Pipeline</h1>
-            <a href="/Bdcalling/Bootstrap/ToDoListFormBootstrap.html"><button class="btn btn-primary mb-3">CREATE</button></a>
-          </div>
-
-          <div style="width: 400px;">
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Search">
-              <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="button">
-                  <i class="fas fa-search"></i>
-                </button>
+      <div class="flex-grow-1">
+        <div class="p-4 bg-white border">
+          <div class="d-flex flex-wrap align-items-center justify-content-between pipeline-container">
+            <div>
+              <h1 class="h4 text-dark">Pipeline</h1>
+              <a href="/Bdcalling/Bootstrap/ToDoListFormBootstrap.html">
+                <button class="btn btn-primary mb-3">CREATE</button>
+              </a>
+            </div>
+  
+            <div style="max-width: 400px; width: 100%;">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" type="button">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
 
       <div class="p-3 mt-4 d-flex gap-3 ">
@@ -154,22 +236,6 @@
 
  
 <!-- card one star here  -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   <div class="d-flex justify-content-between">
     <div class="p-4 d-flex flex-wrap gap-3 justify-content-between" style="">
@@ -668,11 +734,30 @@
   
   
   </div>
-     <!-- card three end  here  -->
+    </div>
+  </div>
 
   <!-- Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.querySelector('.sidebar');
+      sidebar.classList.toggle('active');
+    }
+
+    // Close sidebar when clicking outside of it
+    document.addEventListener('click', function(event) {
+      const sidebar = document.querySelector('.sidebar');
+      const isClickInsideSidebar = sidebar.contains(event.target);
+      const isClickOnHamburger = event.target.closest('.navbar-toggler') !== null;
+
+      if (!isClickInsideSidebar && !isClickOnHamburger && sidebar.classList.contains('active')) {
+        sidebar.classList.remove('active');
+      }
+    });
+  </script>
 </body>
 </html>
