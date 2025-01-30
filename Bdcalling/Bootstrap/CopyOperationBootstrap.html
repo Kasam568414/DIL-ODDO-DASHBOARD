@@ -52,37 +52,39 @@
 
     <!-- Main Content -->
     <div class="flex-grow-1 ">
-      <nav class="navbar navbar-light bg-white border-bottom">
+     <nav class="navbar navbar-light bg-white border-bottom">
         <div class="container-fluid d-flex align-items-center">
-            <div class="position-relative w-50">
-              <input 
-                type="text" 
-                class="form-control pl-5" 
-                placeholder="Search">
-              <i 
-                class="fas fa-search position-absolute" 
-                style="top: 55%; left: 20px; transform: translateY(-50%); color: #aaa;"></i>
+          <!-- Hamburger Menu Icon -->
+          <button class="navbar-toggler d-block d-md-none" type="button" onclick="toggleSidebar()">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="position-relative search-container w-50">
+            <input 
+              type="text" 
+              class="form-control pl-5" 
+              placeholder="Search">
+            <i 
+              class="fas fa-search position-absolute" 
+              style="top: 55%; left: 20px; transform: translateY(-50%); color: #aaa;"></i>
+          </div>
+          <div class="d-flex align-items-center ml-auto">
+            <div class="d-flex align-items-center mr-3">
+              <img src="../Bootstrap/Images/notification.png" alt="Notification" class="img-fluid" style="max-width: 30px;">
+              <span class="ml-2 badge badge-primary">12</span>
             </div>
-            <div class="d-flex align-items-center ml-auto">
-              <div class="d-flex align-items-center mr-3">
-                <img src="/Bdcalling/Images/notification.png" alt="Notification" class="img-fluid" style="max-width: 30px;">
-                <span class="ml-2 badge badge-primary">12</span>
-              </div>
-              <div class="d-flex align-items-center">
-                <img src="https://via.placeholder.com/35" alt="User Profile" class="rounded-circle">
-                <span class="ml-2">Brian F.</span>
-              </div>
+            <div class="d-flex align-items-center">
+              <img src="../Bootstrap/Images/header-frame-5518.png" alt="User Profile" class="rounded-circle">
+              <span class="ml-2">Brian F.</span>
             </div>
           </div>
-          
-          
+        </div>
       </nav>
 
   <div class=" p-2 px-3">
     <div class="mt-4 bg-white border-bottom">
       <div class="d-flex justify-content-between align-items-center mb-3">
           <div class="d-flex align-items-center gap-3 px-1  ">
-              <img src="/Bdcalling/Images/header-icon-arrow-left.png" alt="" class="img-fluid" style="width: 20px; height: 20px;">
+              <img src="../Bootstrap/Images/header-icon-arrow-left.png" alt="" class="img-fluid" style="width: 20px; height: 20px;">
               <h1 class="h4 text-dark ml-2">All Order Information</h1>
           </div>
         

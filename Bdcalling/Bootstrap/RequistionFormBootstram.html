@@ -54,40 +54,42 @@
     <div class="flex-grow-1 ">
       <nav class="navbar navbar-light bg-white border-bottom">
         <div class="container-fluid d-flex align-items-center">
-            <div class="position-relative w-50">
-              <input 
-                type="text" 
-                class="form-control pl-5" 
-                placeholder="Search">
-              <i 
-                class="fas fa-search position-absolute" 
-                style="top: 55%; left: 20px; transform: translateY(-50%); color: #aaa;"></i>
+          <!-- Hamburger Menu Icon -->
+          <button class="navbar-toggler d-block d-md-none" type="button" onclick="toggleSidebar()">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="position-relative search-container w-50">
+            <input 
+              type="text" 
+              class="form-control pl-5" 
+              placeholder="Search">
+            <i 
+              class="fas fa-search position-absolute" 
+              style="top: 55%; left: 20px; transform: translateY(-50%); color: #aaa;"></i>
+          </div>
+          <div class="d-flex align-items-center ml-auto">
+            <div class="d-flex align-items-center mr-3">
+              <img src="../Bootstrap/Images/notification.png" alt="Notification" class="img-fluid" style="max-width: 30px;">
+              <span class="ml-2 badge badge-primary">12</span>
             </div>
-            <div class="d-flex align-items-center ml-auto">
-              <div class="d-flex align-items-center mr-3">
-                <img src="/Bdcalling/Images/notification.png" alt="Notification" class="img-fluid" style="max-width: 30px;">
-                <span class="ml-2 badge badge-primary">12</span>
-              </div>
-              <div class="d-flex align-items-center">
-                <img src="https://via.placeholder.com/35" alt="User Profile" class="rounded-circle">
-                <span class="ml-2">Brian F.</span>
-              </div>
+            <div class="d-flex align-items-center">
+              <img src="../Bootstrap/Images/header-frame-5518.png" alt="User Profile" class="rounded-circle">
+              <span class="ml-2">Brian F.</span>
             </div>
           </div>
-          
-          
+        </div>
       </nav>
 
   <div class=" p-2 px-3">
     <div class="mt-4 bg-white border-bottom">
       <div class="d-flex justify-content-between align-items-center mb-3">
           <div class="d-flex align-items-center gap-3 px-1  ">
-              <img src="/Bdcalling/Images/header-icon-arrow-left.png" alt="" class="img-fluid" style="width: 20px; height: 20px;">
+              <img src="../Bootstrap/Images/header-icon-arrow-left.png" alt="" class="img-fluid" style="width: 20px; height: 20px;">
               <h1 class="h4 text-dark ml-2">Add</h1>
           </div>
           <div>
             <button class="btn btn-dark d-flex align-items-center  gap-2 mr-3">
-                <img src="/Bdcalling/Images/listicon.png" alt="" class="img-fluid mr-2" style="width: 16px; height: 16px;">
+                <img src="../Bootstrap/Images/listicon.png" alt="" class="img-fluid mr-2" style="width: 16px; height: 16px;">
                 <span class="text-white small" style="height: 20px;">View list</span>
             </button>
             
@@ -111,7 +113,7 @@
             <input type="text" class="form-control" placeholder="Md Saifullah Mamun" required>
             <div class="input-group-append">
               <span class="input-group-text">
-                <img src="/Bdcalling/Images/vuesax-outline-frame.png" alt="Phone Icon" class="phone-icon">
+                <img src="../Bootstrap/Images/vuesax-outline-frame.png" alt="Phone Icon" class="phone-icon">
               </span>
             </div>
           </div>
@@ -125,7 +127,7 @@
             <input type="tel" class="form-control" placeholder="Enter your phone number" required>
             <div class="input-group-append">
               <span class="input-group-text">
-                <img src="/Bdcalling/Images/vuesax-outline-call.png" alt="Phone Icon" class="phone-icon">
+                <img src="../Bootstrap/Images/vuesax-outline-call.png" alt="Phone Icon" class="phone-icon">
               </span>
             </div>
           </div>
@@ -147,7 +149,7 @@
             <input type="text" class="form-control" placeholder="Select Team Name" required>
             <div class="input-group-append">
               <span class="input-group-text">
-                <img src="/Bdcalling/Images/vuesax-outline-arrow-bottom.png" alt="Phone Icon" class="phone-icon">
+                <img src="../Bootstrap/Images/vuesax-outline-arrow-bottom.png" alt="Phone Icon" class="phone-icon">
               </span>
             </div>
           </div>
@@ -161,7 +163,7 @@
             <input type="text" class="form-control" placeholder="Select Item Category" required>
             <div class="input-group-append">
               <span class="input-group-text">
-                <img src="/Bdcalling/Images/vuesax-outline-arrow-bottom.png" alt="Phone Icon" class="phone-icon">
+                <img src="../Bootstrap/Images/vuesax-outline-arrow-bottom.png" alt="Phone Icon" class="phone-icon">
               </span>
             </div>
           </div>
@@ -172,7 +174,7 @@
             <input type="text" class="form-control" placeholder="Select Priority" required>
             <div class="input-group-append">
               <span class="input-group-text">
-                <img src="/Bdcalling/Images/vuesax-outline-arrow-bottom.png" alt="Phone Icon" class="phone-icon">
+                <img src="../Bootstrap/Images/vuesax-outline-arrow-bottom.png" alt="Phone Icon" class="phone-icon">
               </span>
             </div>
           </div>
@@ -194,7 +196,7 @@
                 <label for="product" class="form-label">Product</label>
                 <div class="input-group">
                     <input type="text" class="form-control" id="product" placeholder="Search Product">
-                    <span class="input-group-text"><img src="/Bdcalling/Images/vuesax-outline-search-normal.png" alt="Search Icon" class="phone-icon"></span>
+                    <span class="input-group-text"><img src="../Bootstrap/Images/vuesax-outline-search-normal.png" alt="Search Icon" class="phone-icon"></span>
                 </div>
             </div>
             <div class="col-md-2">
@@ -213,13 +215,13 @@
               <div class="d-flex gap-3">
                 <!-- Attach Files Button -->
                 <button type="button" class="btn btn-primary  w-100 d-flex align-items-center  justify-content-center" style="height: 38px;">
-                    <img src="/Bdcalling/Images/iconly-light-upload.png" alt="Upload Icon" class="me-2  mr-2  img-icon" 
+                    <img src="../Bootstrap/Images/iconly-light-upload.png" alt="Upload Icon" class="me-2  mr-2  img-icon" 
                          style="filter: grayscale(100%); transition: filter 0.3s ease; height: 24px;">
                     Attach files
                 </button>
                 <!-- Remove Button -->
                 <button type="button" class="btn btn-danger  w-100 d-flex align-items-center ml-2 justify-content-center ms-2" style="height: 38px;">
-                    <img src="/Bdcalling/Images/iconly-light-delete.png" alt="Delete Icon" class="me-2 mr-2 img-icon" 
+                    <img src="../Bootstrap/Images/iconly-light-delete.png" alt="Delete Icon" class="me-2 mr-2 img-icon" 
                          style="filter: grayscale(100%); transition: filter 0.3s ease; height: 24px;">
                     Remove
                 </button>
@@ -232,12 +234,12 @@
             
             </div>
         </div>
-        <div class="row mb-3 align-items-end">
+    <div class="row mb-3 align-items-end">
             <div class="col-md-3">
                 <label for="product" class="form-label">Product</label>
                 <div class="input-group">
                     <input type="text" class="form-control" id="product" placeholder="Search Product">
-                    <span class="input-group-text"><img src="/Bdcalling/Images/vuesax-outline-search-normal.png" alt="Search Icon" class="phone-icon"></span>
+                    <span class="input-group-text"><img src="../Bootstrap/Images/vuesax-outline-search-normal.png" alt="Search Icon" class="phone-icon"></span>
                 </div>
             </div>
             <div class="col-md-2">
@@ -256,13 +258,13 @@
               <div class="d-flex gap-3">
                 <!-- Attach Files Button -->
                 <button type="button" class="btn btn-primary  w-100 d-flex align-items-center  justify-content-center" style="height: 38px;">
-                    <img src="/Bdcalling/Images/iconly-light-upload.png" alt="Upload Icon" class="me-2  mr-2  img-icon" 
+                    <img src="../Bootstrap/Images/iconly-light-upload.png" alt="Upload Icon" class="me-2  mr-2  img-icon" 
                          style="filter: grayscale(100%); transition: filter 0.3s ease; height: 24px;">
                     Attach files
                 </button>
                 <!-- Remove Button -->
                 <button type="button" class="btn btn-danger  w-100 d-flex align-items-center ml-2 justify-content-center ms-2" style="height: 38px;">
-                    <img src="/Bdcalling/Images/iconly-light-delete.png" alt="Delete Icon" class="me-2 mr-2 img-icon" 
+                    <img src="../Bootstrap/Images/iconly-light-delete.png" alt="Delete Icon" class="me-2 mr-2 img-icon" 
                          style="filter: grayscale(100%); transition: filter 0.3s ease; height: 24px;">
                     Remove
                 </button>
@@ -274,13 +276,13 @@
             
             
             </div>
-        </div>
-        <div class="row mb-3 align-items-end">
+        </div>    
+    <div class="row mb-3 align-items-end">
             <div class="col-md-3">
                 <label for="product" class="form-label">Product</label>
                 <div class="input-group">
                     <input type="text" class="form-control" id="product" placeholder="Search Product">
-                    <span class="input-group-text"><img src="/Bdcalling/Images/vuesax-outline-search-normal.png" alt="Search Icon" class="phone-icon"></span>
+                    <span class="input-group-text"><img src="../Bootstrap/Images/vuesax-outline-search-normal.png" alt="Search Icon" class="phone-icon"></span>
                 </div>
             </div>
             <div class="col-md-2">
@@ -299,19 +301,17 @@
               <div class="d-flex gap-3">
                 <!-- Attach Files Button -->
                 <button type="button" class="btn btn-primary  w-100 d-flex align-items-center  justify-content-center" style="height: 38px;">
-                    <img src="/Bdcalling/Images/iconly-light-upload.png" alt="Upload Icon" class="me-2  mr-2  img-icon" 
+                    <img src="../Bootstrap/Images/iconly-light-upload.png" alt="Upload Icon" class="me-2  mr-2  img-icon" 
                          style="filter: grayscale(100%); transition: filter 0.3s ease; height: 24px;">
                     Attach files
                 </button>
                 <!-- Remove Button -->
                 <button type="button" class="btn btn-danger  w-100 d-flex align-items-center ml-2 justify-content-center ms-2" style="height: 38px;">
-                    <img src="/Bdcalling/Images/iconly-light-delete.png" alt="Delete Icon" class="me-2 mr-2 img-icon" 
+                    <img src="../Bootstrap/Images/iconly-light-delete.png" alt="Delete Icon" class="me-2 mr-2 img-icon" 
                          style="filter: grayscale(100%); transition: filter 0.3s ease; height: 24px;">
                     Remove
                 </button>
             </div>
-       
-
             
             
             <!-- Bootstrap's default hover effect -->
@@ -319,8 +319,8 @@
             
             
             </div>
-      
-        </div>
+        </div>    
+        
         <button class="btn btn-dark d-flex align-items-center">
           <i class="fas fa-plus me-2"></i> Add Product
         </button>

@@ -22,67 +22,69 @@
 <body>
   <div class="d-flex  ">
     <!-- Sidebar -->
-    <div class="d-flex flex-column bg-light border-right" style="min-height: 100vh; width: 250px;">
+    <div class="sidebar d-flex flex-column bg-light border-right" style="min-height: 100vh; width: 250px;">
         <div class="text-center py-3">
-            <img src="../Bootstrap/Images/navigation-image-2.png" alt="Logo" class="img-fluid" style="max-width: 185px;">
+          <img src="../Bootstrap/Images/navigation-image-2.png" alt="Logo" class="img-fluid" style="max-width: 185px;">
         </div>
         <ul class="nav flex-column pl-4">
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="./index.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="./ToDoList2Bootstrap.html"><i class="fas fa-list-alt"></i> To-Do List</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="./Sales1Bootstrap.html"><i class="fas fa-chart-line"></i> Sales</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="./OperationBootstrap.html"><i class="fas fa-cogs"></i> Operation</a>
-            </li>
-            <li class="nav-item ">
-              <a class="nav-link text-dark" href="./RequistionBootstrap.html"><i class="fas fa-clipboard-list"></i> Requisition</a>
-            </li>
-            <hr style="border: 1px solid #000; margin: 10px 0; width: 90%; background-color: #000;">
-    
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
-            </li>
-          </ul>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="./index.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="./ToDoList2Bootstrap.html"><i class="fas fa-list-alt"></i> To-Do List</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="./Sales1Bootstrap.html"><i class="fas fa-chart-line"></i> Sales</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="./OperationBootstrap.html"><i class="fas fa-cogs"></i> Operation</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link text-dark" href="./RequistionBootstrap.html"><i class="fas fa-clipboard-list"></i> Requisition</a>
+          </li>
+          <hr style="border: 1px solid #000; margin: 10px 0; width: 90%; background-color: #000;">
+  
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+          </li>
+        </ul>
       </div>
 
     <!-- Main Content -->
     <div class="flex-grow-1 ">
-      <nav class="navbar navbar-light bg-white border-bottom">
-        <div class="container-fluid d-flex align-items-center">
-            <div class="position-relative w-50">
-              <input 
-                type="text" 
-                class="form-control pl-5" 
-                placeholder="Search">
-              <i 
-                class="fas fa-search position-absolute" 
-                style="top: 55%; left: 20px; transform: translateY(-50%); color: #aaa;"></i>
+        <nav class="navbar navbar-light bg-white border-bottom">
+            <div class="container-fluid d-flex align-items-center">
+              <!-- Hamburger Menu Icon -->
+              <button class="navbar-toggler d-block d-md-none" type="button" onclick="toggleSidebar()">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="position-relative search-container w-50">
+                <input 
+                  type="text" 
+                  class="form-control pl-5" 
+                  placeholder="Search">
+                <i 
+                  class="fas fa-search position-absolute" 
+                  style="top: 55%; left: 20px; transform: translateY(-50%); color: #aaa;"></i>
+              </div>
+              <div class="d-flex align-items-center ml-auto">
+                <div class="d-flex align-items-center mr-3">
+                  <img src="../Bootstrap/Images/notification.png" alt="Notification" class="img-fluid" style="max-width: 30px;">
+                  <span class="ml-2 badge badge-primary">12</span>
+                </div>
+                <div class="d-flex align-items-center">
+                  <img src="../Bootstrap/Images/header-frame-5518.png" alt="User Profile" class="rounded-circle">
+                  <span class="ml-2">Brian F.</span>
+                </div>
+              </div>
             </div>
-            <div class="d-flex align-items-center ml-auto">
-              <div class="d-flex align-items-center mr-3">
-                <img src="/Bdcalling/Images/notification.png" alt="Notification" class="img-fluid" style="max-width: 30px;">
-                <span class="ml-2 badge badge-primary">12</span>
-              </div>
-              <div class="d-flex align-items-center">
-                <img src="https://via.placeholder.com/35" alt="User Profile" class="rounded-circle">
-                <span class="ml-2">Brian F.</span>
-              </div>
-            </div> 
-          </div>
-           
-          
-      </nav>
+          </nav>
 
   <div class=" p-2 px-3">
     <div class="mt-4 bg-white border-bottom">
       <div>
           <div class="d-flex align-items-center gap-3 px-3">
-              <img src="/Bdcalling/Images/header-icon-arrow-left.png" alt="" class="img-fluid" style="width: 20px; height: 20px;">
+            <img src="../Bootstrap/Images/header-icon-arrow-left.png" alt="" class="img-fluid" style="width: 20px; height: 20px;">
               <h1 class="h4 text-dark ml-2">Create Order</h1>
           </div>
        
@@ -122,7 +124,7 @@
     <div class="employee-details p-4 rounded shadow-sm mt-4" style="background: #FAFAFA;" >
        <div class="d-flex justify-content-between align-items-center">
         <h2 class="h5 mb-4">Sales Employee Details</h2>
-        <img src="/Bdcalling/Images/group-1707477999.png" alt="" class="mb-3" style="width: 65px; height: 30px;">
+        <img src="../Bootstrap/Images/group-1707477999.png" alt="" class="mb-3" style="width: 65px; height: 30px;">
        </div>
         <form>
             <div class="mb-3">
@@ -187,7 +189,7 @@
                 </div>
             </div>
 
-           <a href="/Bdcalling/Bootstrap/AddNewCustomerBootstrap.html"> <button type="button" class="btn btn-dark mb-3">+ Add New Customer</button></a>
+           <a href="./AddNewCustomerBootstrap.html"> <button type="button" class="btn btn-dark mb-3">+ Add New Customer</button></a>
 
             <div class="row mb-3">
                 <div class="col">
