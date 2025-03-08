@@ -93,52 +93,56 @@
    
   </div>
  
-  <div class="rounded  p-4 mt-4" style="background: #FAFAFA;">
+  <div class="rounded p-4 mt-4" style="background: #FAFAFA;">
     <h2 class="mb-4 h5">Customer Details</h2>
     <form>
-        <div class="form-row">
-            <div class="form-group col-md-6">
+        <div class="row">
+            <div class="col-md-6 mb-3">
                 <label for="customer-name">Customer Full Name</label>
                 <input type="text" class="form-control" id="customer-name" placeholder="Md Saifullah Mamon">
             </div>
-            <div class="form-group col-md-6">
+            <div class="col-md-6 mb-3">
                 <label for="client-username">Client User Name</label>
                 <input type="text" class="form-control" id="client-username">
             </div>
         </div>
-        <div class="form-row">
-            <div class="form-group col-md-6">
+        <div class="row">
+            <div class="col-md-6 mb-3">
                 <label for="address">Address</label>
                 <input type="text" class="form-control" id="address">
             </div>
-            <div class="form-group col-md-6">
+            <div class="col-md-6 mb-3">
                 <label for="city">City</label>
                 <input type="text" class="form-control" id="city" placeholder="Data Insight LLC">
             </div>
         </div>
-        <div class="form-row">
-            <div class="form-group col-md-6">
+        <div class="row">
+            <div class="col-md-6 mb-3">
                 <label for="zip">Zip</label>
                 <input type="text" class="form-control" id="zip">
             </div>
-            <div class="form-group col-md-6">
+            <div class="col-md-6 mb-3">
                 <label for="country">Country</label>
                 <input type="text" class="form-control" id="country" placeholder="Data Insight LLC">
             </div>
         </div>
-        <div class="form-row">
-            <div class="form-group col-md-6">
+        <div class="row">
+            <div class="col-md-6 mb-3">
                 <label for="website">Website</label>
                 <input type="text" class="form-control" id="website">
             </div>
-            <div class="form-group col-md-6">
-                <label for="website"></label>
-                <button type="button" class="btn btn-primary w-100 d-flex justify-content-center align-items-center mt-2">
-                    <img src="./Images/iconly-light-upload.png" alt="" class="mr-2">
-                    <span class="text-white">Add/Change Photo</span>
-                </button>
-            </div>
+            <div class="col-md-6 mb-3">
+              <label for="photo-upload"></label>
+              <button type="button" class="btn btn-dark w-100 d-flex justify-content-center align-items-center mt-2">
+                  <img src="./Images/iconly-light-upload.png" alt="" class="mr-2" style="filter: invert(1);">
+                  <span class="text-white">Add/Change Photo</span>
+              </button>
+          </div>
+          
         </div>
+
+        <!-- Full-Width Add Customer Button -->
+        <button type="submit"   class="btn btn-dark mb-3  w-100 mt-3">Add Customer</button>
     </form>
 </div>
   
